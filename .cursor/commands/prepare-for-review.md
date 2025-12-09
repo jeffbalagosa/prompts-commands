@@ -18,8 +18,8 @@ Track these as TODOs and complete sequentially:
 
 1. **Analyze branch state**
 
-   - Run `git log main..HEAD --oneline` to list commits.
-   - Run `git diff main...HEAD --stat` to summarize changes.
+   - Run `git log master..HEAD --oneline` to list commits.
+   - Run `git diff master...HEAD --stat` to summarize changes.
    - Identify files changed, commits to clean, and scope of review.
 
 2. **Clarify and align with the user**
@@ -32,7 +32,7 @@ Track these as TODOs and complete sequentially:
 
    - Squash fixup/WIP commits into meaningful units.
    - Rewrite commit messages to follow `<type>(<scope>): <summary>` format.
-   - Rebase onto latest `main` if behind (confirm before force-push).
+   - Rebase onto latest `master` if behind (confirm before force-push).
 
 4. **Run quality checks**
 
