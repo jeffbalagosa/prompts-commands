@@ -18,7 +18,7 @@ description: Improve or construct prompts with clarifying questions, expert pers
 **Output**
 - Start with a brief analysis when refining an existing prompt.
 - Provide the improved prompt in a clean, copy-ready block with clear sections.
-- Write the final prompt to `.cursor/commands/{nnn}-{semantic-name}.md` (zero-padded `nnn` starting at `001` for each semantic name; increment `nnn` only when that semantic name already exists). Examples: `001-add-dark-mode.md`, `001-create-config-file.md`, `002-add-dark-mode.md`.
+- Write the final prompt to `.github/prompts/{nnn}-{semantic-name}.md` (zero-padded `nnn` starting at `001` for each semantic name; increment `nnn` only when that semantic name already exists). Examples: `001-add-dark-mode.md`, `001-create-config-file.md`, `002-add-dark-mode.md`.
 - List 2-3 optional add-ons.
 - Close with a concise confirmation question.
 
