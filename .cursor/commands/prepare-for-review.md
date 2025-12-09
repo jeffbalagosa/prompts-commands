@@ -22,26 +22,32 @@ Track these as TODOs and complete sequentially:
    - Run `git diff main...HEAD --stat` to summarize changes.
    - Identify files changed, commits to clean, and scope of review.
 
-2. **Commit hygiene**
+2. **Clarify and align with the user**
+
+   - Consider, "Do I have enough context to answer why these changes were made?"
+   - Consider if these changes have a related story or epic.
+   - Ask up to seven multiple-choice clarifying questions to the user to get more context about the changes.
+
+3. **Commit hygiene**
 
    - Squash fixup/WIP commits into meaningful units.
    - Rewrite commit messages to follow `<type>(<scope>): <summary>` format.
    - Rebase onto latest `main` if behind (confirm before force-push).
 
-3. **Run quality checks**
+4. **Run quality checks**
 
    - Execute test suite; all tests must pass.
    - Execute linter; all lint errors must be resolved.
    - Report results before proceeding.
 
-4. **Code cleanup**
+5. **Code cleanup**
 
    - Remove console logs used for debugging.
    - Remove commented-out code, trivial narrations, orphan TODOs.
    - Fix misleading or outdated comments.
    - Keep concise doc comments and JSDoc/docstrings.
 
-5. **Self-review checklist**
+6. **Self-review checklist**
    Before submitting, confirm:
 
    - [ ] All tests pass locally
@@ -52,7 +58,7 @@ Track these as TODOs and complete sequentially:
    - [ ] No unintended file changes (package-lock, config drift)
    - [ ] Reviewed diff one more time for obvious issues
 
-6. **Draft PR**
+7. **Draft PR**
    Create `PR_DRAFT.md` using this template:
 
    **Title:** `<type>(<scope>): <concise summary>`

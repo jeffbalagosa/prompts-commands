@@ -25,14 +25,10 @@ Track these steps as TODOs and complete them one by one.
 * Fix: update misleading or outdated ones.
 * Keep: concise doc comments.
 
-**Clarifying Questions (Example)**
-1) Change type: A) feat B) fix C) chore D) refactor
-2) Logging baseline: A) errors+warn only B) +info C) guard behind DEBUG D) remove non-error
-3) Remove logs in tests: A) yes B) no
-4) Comment policy: A) delete noise B) keep JSDoc/docstrings C) keep TODO/FIXME with issue refs D) convert TODO→issue+link
-5) Scope: A) repo-wide B) changed files only C) specified dirs D) affected workspaces
-6) PR reviewers: A) top owners B) team default C) none D) provide names
-7) Default branch name: A) main B) master C) develop D) other (specify)
+**Clarifying and aligning with the user**
+- Consider, "Do I have enough context to answer why these changes were made?"
+- Consider if these changes have a related story or epic.
+- Ask up to seven multiple-choice clarifying questions to the user to get more context about the changes.
 
 **PR Draft (`PR_DRAFT.md`)**
 * **Title:** `<type>(<scope>): <concise summary>`
